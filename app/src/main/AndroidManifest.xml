@@ -9,7 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tilem">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ui.detail.TVShowsDetailActivity"
+            android:label="@string/title_activity_tv_show_detail"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/Theme.Tilem.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.detail.MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/Theme.Tilem.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.HomeActivity" />
+        </activity>
+        <activity android:name=".ui.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
