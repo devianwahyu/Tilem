@@ -6,17 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.devianwahyu.tilem.databinding.FragmentBinding
+import com.devianwahyu.tilem.databinding.FragmentTvShowBinding
 
 class TVShowsFragment : Fragment() {
 
-    private lateinit var fragmentBinding: FragmentBinding
+    private lateinit var fragmentBinding: FragmentTvShowBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        fragmentBinding = FragmentBinding.inflate(layoutInflater, container, false)
+        fragmentBinding = FragmentTvShowBinding.inflate(layoutInflater, container, false)
         return fragmentBinding.root
     }
 
@@ -29,7 +29,7 @@ class TVShowsFragment : Fragment() {
             val movieAdapter = TVShowsAdapter()
             movieAdapter.setMovies(tvShows)
 
-            with(fragmentBinding.rvMovie) {
+            with(fragmentBinding.rvTvShow) {
                 layoutManager = LinearLayoutManager(context)
                 setHasFixedSize(true)
                 adapter = movieAdapter

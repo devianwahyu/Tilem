@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tilem">
+        <activity android:name=".ui.splash.SplashActivity"></activity>
         <activity
             android:name=".ui.detail.TVShowsDetailActivity"
             android:label="@string/title_activity_tv_show_detail"

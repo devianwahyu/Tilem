@@ -39,8 +39,8 @@ class TVShowsAdapter: RecyclerView.Adapter<TVShowsAdapter.TVShowsViewHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): TVShowsViewHolder {
-        val itemsMovieBinding = ItemsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return TVShowsViewHolder(itemsMovieBinding)
+        val itemsBinding = ItemsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return TVShowsViewHolder(itemsBinding)
     }
 
     override fun onBindViewHolder(holder: TVShowsViewHolder, position: Int) {

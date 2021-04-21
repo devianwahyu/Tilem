@@ -111,7 +111,7 @@ object DataDummy {
             ModelEntity(
                 "1",
                 "Digimons",
-                "Digimon adalah anjing",
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, ",
                 4,
                 R.drawable.tv_digimon,
                 "24 May 2010")
@@ -121,7 +121,7 @@ object DataDummy {
             ModelEntity(
                 "2",
                 "Catatan Hati Istri",
-                "Catatan Hati Istri sinetron hoaks",
+                "And expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself",
                 1,
                 R.drawable.tv_hati,
                 "24 April 2019")
@@ -130,7 +130,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("3",
                 "Heirs of the Night",
-                "gaeroh pakde",
+                "because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely",
                 4,
                 R.drawable.tv_heirs,
                 "27 October 2018")
@@ -139,7 +139,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("4",
                 "Hercal",
-                "Penuh dusta",
+                "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil ",
                 5,
                 R.drawable.tv_hercal,
                 "12 December 2018")
@@ -148,7 +148,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("5",
                 "In The Kost",
-                "maksiat",
+                "To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault",
                 5,
                 R.drawable.tv_inthekost,
                 "24 July 2014")
@@ -157,7 +157,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("6",
                 "Kemuliaan Hati",
-                "assalamualaikum mamang",
+                "who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous",
                 3,
                 R.drawable.tv_mulia,
                 "24 June 2017")
@@ -166,7 +166,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("7",
                 "Padi Reborn",
-                "panen pari",
+                "dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee",
                 5,
                 R.drawable.tv_padi,
                 "2 October 2019")
@@ -175,7 +175,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("8",
                 "Peristawa",
-                "acara aneh.",
+                "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.",
                 4,
                 R.drawable.tv_peristawa,
                 "10 October 2019")
@@ -184,7 +184,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("9",
                 "Tonight Show",
-                "asik",
+                "Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack",
                 5,
                 R.drawable.tv_tns,
                 "17 August 2000")
@@ -193,7 +193,7 @@ object DataDummy {
         tvShows.add(
             ModelEntity("10",
                 "Zalim",
-                "sinetron firaun",
+                "Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras",
                 5,
                 R.drawable.tv_zalim,
                 "20 August 2020")
