@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.devianwahyu.tilem.databinding.FragmentBinding
-import com.devianwahyu.tilem.utils.DataDummy
 
 class MovieFragment : Fragment() {
 

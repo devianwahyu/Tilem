@@ -2,12 +2,12 @@ package com.devianwahyu.tilem.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.devianwahyu.tilem.R
 import com.devianwahyu.tilem.data.ModelEntity
 import com.devianwahyu.tilem.databinding.ActivityDetailBinding
 import com.devianwahyu.tilem.databinding.ContentDetailBinding
-import com.devianwahyu.tilem.utils.DataDummy
 
 class MovieDetailActivity : AppCompatActivity() {
 
@@ -33,11 +33,9 @@ class MovieDetailActivity : AppCompatActivity() {
         if (extras != null) {
             val id = extras.getString(EXTRA_MOVIE)
             if (id != null) {
-                for (movie in DataDummy.generateDummyMovies()) {
-                    if (movie.id == id) {
-                        populateMovie(movie)
-                    }
-                }
+                val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[DetailViewModel::class.java]
+                val movie = viewModel.getDetailMovie(id)
+                movie?.let { populateMovie(it) }
             }
         }
     }

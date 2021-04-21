@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.devianwahyu.tilem.databinding.FragmentBinding
-import com.devianwahyu.tilem.utils.DataDummy
 
 class TVShowsFragment : Fragment() {
 

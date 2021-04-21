@@ -2,12 +2,12 @@ package com.devianwahyu.tilem.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.devianwahyu.tilem.R
 import com.devianwahyu.tilem.data.ModelEntity
 import com.devianwahyu.tilem.databinding.ActivityDetailBinding
 import com.devianwahyu.tilem.databinding.ContentDetailBinding
-import com.devianwahyu.tilem.utils.DataDummy
 
 class TVShowsDetailActivity : AppCompatActivity() {
 
@@ -33,11 +33,9 @@ class TVShowsDetailActivity : AppCompatActivity() {
         if (extras != null) {
             val id = extras.getString(EXTRA_TV_SHOWS)
             if (id != null) {
-                for (tvShow in DataDummy.generateDummyTvShows()) {
-                    if (tvShow.id == id) {
-                        populateTVShow(tvShow)
-                    }
-                }
+                val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[DetailViewModel::class.java]
+                val tvShow = viewModel.getDetailTVShows(id)
+                tvShow?.let { populateTVShow(it) }
             }
         }
     }
