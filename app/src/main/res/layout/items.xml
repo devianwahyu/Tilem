@@ -30,30 +30,40 @@
 
         <TextView
             android:id="@+id/title"
+            style="@style/title_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ellipsize="end"
             android:gravity="start"
             android:maxLines="2"
-            android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_poster"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Avenger" />
 
-        <TextView
-            android:id="@+id/rilis_date"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="start"
-            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/date_icon"
+            android:src="@drawable/ic_date"
             app:layout_constraintStart_toStartOf="@+id/title"
-            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/rilis_date"
+            style="@style/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
             tools:text="24 July 2000" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

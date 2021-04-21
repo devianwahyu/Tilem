@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/img_poster"
-        android:layout_width="160dp"
-        android:layout_height="200dp"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="32dp"
         android:src="@color/teal_200"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,49 +21,79 @@
 
     <TextView
         android:id="@+id/title"
+        style="@style/title_list"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="28sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_poster"
         app:layout_constraintTop_toTopOf="@+id/img_poster"
         tools:text="Avenger" />
 
-    <TextView
-        android:id="@+id/rilis_date"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="start"
-        android:textSize="14sp"
+        android:src="@drawable/ic_date"
         app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/title"
+        android:contentDescription="@string/date_icon" />
+
+    <TextView
+        android:id="@+id/rilis_date"
+        style="@style/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
         tools:text="rilis" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:contentDescription="@string/icon_star" />
 
     <TextView
         android:id="@+id/rating"
+        style="@style/sub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        tools:text="5"
-        android:textColor="@color/teal_700"
-        android:textSize="16sp"
+        android:layout_marginStart="8dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/rilis_date"
-        app:layout_constraintTop_toBottomOf="@+id/rilis_date" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/img_poster"
+        app:layout_constraintTop_toBottomOf="@+id/img_poster" />
 
     <TextView
         android:id="@+id/description"
+        style="@style/sub"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/title"
         app:layout_constraintStart_toStartOf="@+id/img_poster"
-        app:layout_constraintTop_toBottomOf="@+id/img_poster"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:text="Description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
